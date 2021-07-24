@@ -1,0 +1,88 @@
+.user {
+  &__container {
+    max-width: 500px;
+    width: 100%;
+    padding-top: 3rem;
+    text-align: center;
+    position: relative;
+  }
+  &__exit {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 30px;
+    cursor: pointer;
+    &-text {
+      font-size: 10px;
+      display: block;
+    }
+  }
+  &__avatar {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background-color: rgb(211, 207, 207);
+    border-radius: 50%;
+    & img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+  &__info {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-title {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    &-divider {
+      display: inline-block;
+      width: 1px;
+      height: 20px;
+      background-color: rgb(161, 159, 159);
+      margin: 0 1rem;
+    }
+  }
+
+  &__videos {
+    width: 100%;
+    margin-top: 1rem;
+    border-top: 1px solid rgb(206, 202, 202);
+    border-bottom: 1px solid rgb(206, 202, 202);
+    display: flex;
+    justify-content: space-evenly;
+    &-icon {
+      width: 15%;
+      text-align: center;
+      font-size: 2rem;
+      position: relative;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+  &__lists {
+    margin-top: 0.5rem;
+    width: 100%;
+
+    &-item {
+      width: 90px;
+      height: 160px;
+      background-color: rgb(212, 209, 209);
+      margin: auto;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      display: inline-block;
+    }
+    &-video {
+      width: 90px;
+      height: 160px;
+    }
+  }
+}

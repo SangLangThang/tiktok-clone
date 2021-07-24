@@ -1,0 +1,74 @@
+@import "~antd/dist/antd.css";
+html {
+  scroll-snap-type: y mandatory;
+}
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+  & .container + .footer {
+    color: rgb(119, 118, 118);
+  }
+  & .user__container {
+    color: black;
+    & + .footer {
+      color: rgb(119, 118, 118);
+    }
+  }
+  &__videos {
+    margin: auto;
+    position: relative;
+    height: 100vh;
+    max-width: 500px;
+    overflow-y: scroll;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    background-color: black;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    & + .footer {
+      background-color: transparent;
+    }
+  }
+  & .upload-video {
+    color: black;
+    & + .footer {
+      color: rgb(119, 118, 118);
+    }
+  }
+  & .form__container {
+    color: black;
+    & + .footer {
+      color: rgb(119, 118, 118);
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+.red {
+  color: red;
+}
+.purple-6 {
+  background-color: #722ed1;
+}
+.geekblue-4 {
+  background-color: #85a5ff;
+}
+.gray-4 {
+  background-color: #d9d9d9;
+}
+.text-center {
+  text-align: center;
+}

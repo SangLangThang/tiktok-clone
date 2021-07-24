@@ -1,0 +1,11 @@
+.wait__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: calc(100vh - 70px);
+  & img {
+    width: 100%;
+  }
+}

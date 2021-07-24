@@ -1,0 +1,36 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 1.8rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 0.5rem;
+  height: 75px;
+  background-color: white;
+  padding-top: 1rem;
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 0;
+    & li {
+      width: 20%;
+    }
+    & span {
+      font-size: 1rem;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.video__process {
+  width: 100%;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+}

@@ -1,0 +1,123 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.video {
+  &__container {
+    position: relative;
+    scroll-snap-align: start;
+    width: 100%;
+    min-width: 360px;
+    height: 100vh;
+    color: white;
+
+    & .ant-divider {
+      background-color: white;
+    }
+  }
+  &__player {
+    width: calc(100vh / 1.77777);
+    height: 100vh;
+    margin: 0px 0px 0px calc((100% - (100vh / 1.77777)) / 2);
+  }
+  &__header {
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    font-size: 1rem;
+    width: 100%;
+  }
+  &__music {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+
+    &-icon {
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+    }
+    &-avatar {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: 0.5rem;
+    }
+    &-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgb(207, 204, 204);
+      border: 5px solid white;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+  }
+  &__sidebar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0.5rem;
+    top: 30%;
+    &-avatar {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    &-avatar::after {
+      position: absolute;
+      bottom: -10%;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "+";
+
+      text-align: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: red;
+    }
+    &-item {
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      & i {
+        font-size: 2.5rem;
+      }
+      & span {
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: rgb(228, 228, 228);
+      }
+    }
+  }
+}
+.ticker {
+  width: 80%;
+}
+.strong {
+  font-weight: bold;
+}
